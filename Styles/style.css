@@ -16,6 +16,7 @@ body{
     border-radius: 10px;
     background-color: #FFF;
     box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.3);
+    border: 1px solid gray;
 }
 
 /*---Menu---*/
@@ -23,7 +24,7 @@ body{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 h3{
     font-size: 2rem;
@@ -66,8 +67,7 @@ h3{
     background-color: #EEE;
 }
 #feriado{
-    color: #00C8FF;
-    background-color: #D9F7FF;
+    background-color: #00C8FF;
 }
 
 /*---Feriados_nacionais---*/
@@ -79,4 +79,17 @@ h3{
 }
 .feriados_nacionais p{
     font-size: 1rem;
+}
+
+/*---Responsividade---*/
+@media screen and (max-width: 768px) {
+    .calendario{
+        width: 90%;
+    }
+    .barra{
+        gap: 0.5rem;
+    }
+    .barra span{
+        margin-top: 0.5rem;
+    }
 }
